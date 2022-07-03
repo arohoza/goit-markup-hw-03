@@ -160,6 +160,8 @@ ul {
 
 footer {
     background-color: var(--footer-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .request-our-service {
@@ -289,10 +291,6 @@ footer {
     line-height: 1.17;
     margin-top: 10px;
     margin-bottom: 30px;
-}
-
-footer {
- padding-top: 60px;
 }
 
  /* portfolio */
