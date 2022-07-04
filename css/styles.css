@@ -173,7 +173,7 @@ footer {
     padding-bottom: 60px;
 }
 
-.contact-footer{
+.email,.telephone{
     opacity:100%;
     font-size: 14px;
     line-height: 1.46;
@@ -183,20 +183,41 @@ footer {
     display:block
 }
 
-.contact-footer:hover,
-.contact-footer:focus{
+.email:hover,
+.email:focus{
     color: var(--accent-color);
+}
+
+.telephone {
+        color: var(--accent-color);
 }
 
 
 .footer-logo {
+    display: block;
     margin-bottom:9px ;
     margin-right: auto;
     padding: 0;
 }
 
+.contacts-footer {
+display: block;
+}
+
+
+.contacts-footer:first-child{
+    margin-bottom:6px;
+}
+
+.contacts-footer:nth-child(2) {
+margin-bottom: 1px;
+}
 .address-info {
-    margin-bottom: 6px;
+    /* margin-bottom: 6px; */
+    color: var(--background-color);
+    display: block;
+    font-style: normal;
+    text-decoration: none;
 }
 
 .telephone,
@@ -205,9 +226,7 @@ footer {
     opacity: 60%;
     display:block;
 }
-.email {
-    margin-bottom:1px ;
-}
+
 
 /* 1st page */
 
@@ -410,10 +429,10 @@ footer {
 
 }
    
-.filter {
-    display: block;
-    /* margin-left:8px; */
+.filter{
+    display:block;
 }
+
 .filter:not(:last-child){
     margin-right: 8px;
 }
@@ -429,10 +448,6 @@ footer {
 .projects {
     display: flex;
     flex-wrap: wrap;    
-}
-
-.projects-item {
-    border-bottom: 1px solid var(--background-contrast)  
 }
 
 .projects-item>img {
@@ -452,6 +467,9 @@ footer {
     padding-right: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
+    border-left:1px solid var(--background-contrast) ;
+    border-right:1px solid var(--background-contrast) ;
+    border-bottom: 1px solid var(--background-contrast);
 }
 .project-name{
    font-size: 18px;
